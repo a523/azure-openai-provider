@@ -122,7 +122,7 @@ async def get_azure_config(model_name: str | None = None,
                        )
 
 
-def client(endpoint: str, deployment_name: str, api_key: str, api_version: str = "2024-02-01") -> AzureOpenAI:
+def client(endpoint: str, deployment_name: str, api_key: str, api_version: str = "2024-06-01") -> AzureOpenAI:
     return AzureOpenAI(
         azure_endpoint=endpoint,
         azure_deployment=deployment_name,
